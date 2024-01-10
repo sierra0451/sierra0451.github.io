@@ -1,8 +1,106 @@
-body
-{
+:root {
+    --text: #FFB0D0;
+    --title: #80D0FF;
+    --dark: #400020;
+    --button-hover: #a00050;
+}
+
+body {
     background: linear-gradient(45deg, #47accc 0%, #956a9c 60%);
     height: 100%;
-    margin: 0;
+    margin: 5% 10%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    font-family: 'Cairo';
+    font-size: 16pt;
+    color: var(--text);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+#top {
+    margin: 0;
+    font-weight: normal;
+    color: var(--title);
+    margin-bottom: -10px;
+}
+
+.subtitle {
+    font-size: 75%;
+    text-align: center;
+    margin-top: 0;
+}
+
+a {
+    color: var(--text);
+}
+
+.main {
+    background: linear-gradient(45deg, #40002080 20%, #00204080 80%);
+    padding: 5% 7.5%;
+    border-radius: 25px;
+    border: 3px solid var(--dark);
+}
+
+hr {
+    height: 3px;
+    border-width: 0;
+    color: var(--dark);
+    background-color: var(--dark);
+}
+
+.columns
+{
+    width: 100%;
+    table-layout: fixed;
+}
+
+.button, .button-active
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+
+    text-align: center;
+    transition: background-color 0.25s, color 0.25s;
+
+    flex: 1%;
+    margin: 0px 5px;
+}
+
+.button
+{
+    background-color: var(--dark);
+}
+
+.button-active
+{
+    background-color: white;
+    color: black;
+}
+
+.button:hover, .button:focus, .you-are-here:hover, .you-are-here:focus
+{
+    background-color: var(--button-hover);
+    color: white;
+}
+
+.buttons
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.button-text
+{
+    color: white;
+    text-decoration: none;
 }
