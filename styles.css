@@ -87,7 +87,7 @@ hr {
     color: black;
 }
 
-.button:hover, .button:focus, .you-are-here:hover, .you-are-here:focus
+.button:hover, .button:focus
 {
     background-color: var(--button-hover);
     color: white;
